@@ -5,12 +5,12 @@ def find_even_values(src)
   
   count = 0
   while count < src.length do
-
-    arr1 = 0
-    while arr1 < src.length do
-      p src[count][arr1]
-      
-      arr1 += 1
+    ele_index = 0
+    while ele_index < src[count].length do
+      if src[count][ele_index].even?
+        p src[count][ele_index]
+      end
+      ele_index += 1
     end
     count += 1
   end
